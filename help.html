@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+ <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="help.css">
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.1/css/materialize.min.css">
+      
+        <script>
+               
+                
+
+            var synth = window.speechSynthesis;
+          function speakOutLoud(){
+               const task = document.querySelector('.task').value;
+          
+          let message = personsName;
+            let button= document.querySelector('.caregivers');
+            button.onclick = function(event) {    
+            var utterThis = new SpeechSynthesisUtterance(button.value);
+            }
+            synth.speak(utterThis);
+           
+         
+        
+       utterThis.onend = function(event) {
+          button.classList.remove('speakOutLoad()');
+        }
+        
+     button.addEventListener('click', event => {
+            if (speechSynthesis.speaking) {
+                button.classList.remove('speakOutLoad');
+                speechSynthesis.cancel();
+            } else {
+                button.classList.add('speakOutLoad()');
+                speechSynthesis.speak(utterThis);
+            }
+        });
+
+          function speakTask(div){
+              var div = document.getElementsByName(div.name);
+              var speakTaskButton = div;
+           speakTaskButton.onclick= function(e){
+               var utterTask= new SpeechSynthesisUtterance(speakTaskButton.value);
+               var selectedOption = voiceSelect.selectedOptions[0].getAttribute('data-name');
+               for( i =0; i< voices.length; i++){
+                   if(voices[i].name === selectedOption){
+                       utterTask.voice = voices[i];
+                   }
+               }
+               synth.speak(utterTask);
+           }   
+          }
+        }
+                
+        </script>
+    </head>
+    <body>
+            <div class="main">
+                   
+                    <div class="child">
+                            <div id="h3">WHAT DO YOU NEED?</div>
+                        <div class="left">
+                            <div class="nine2 tasks"> 
+                            <div class="butt js--triggerAnimation" onclick="responsiveVoice.speak('Who was that on the phone?');" 
+                       type="button" value="Play"
+                          name="who" 
+                          style="background-image:url('images/whose.png')">
+                       </div>
+                    </div>
+                       <div class="nine2 tasks">
+                       <div class="butt js--triggerAnimation" onclick="responsiveVoice.speak('Where are you going?');" 
+                       type="button" value="Play"
+                          name="Where" 
+                          style="background-image:url('images/where.jpg')">
+                        </div>
+                    </div>
+                        <div class="nine2 tasks"> 
+                        <div class="butt js--triggerAnimation" onclick="responsiveVoice.speak('Who was that at the door?');" 
+                                type="button" value="Play"
+                                    name="Door" 
+                                     style="background-image:url('images/DOOR.jpg')"> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="left2">
+                                <div class="nine2 task">
+                                <div class="butt js--triggerAnimation" onclick="responsiveVoice.speak('Im either too hot or too cold');" 
+                                type="button" value="Play"
+                                    name="Temp" 
+                                     style="background-image:url('images/hot-cold.png')">
+                                </div>
+                                </div>
+                                <div class="nine2 tasks">
+                                        <a href="message.html" >
+                                                <div class="butt js--triggerAnimation" onclick="responsiveVoice.speak('To message area');" 
+                                                type="button" value="Play"
+                                                name="customLink" 
+                                                style="background-image:url('images/write.png')">
+                                            </div>
+                                        </a>
+                                    </div>
+                                        <div class="nine2 tasks">
+                                         <div class="butt js--triggerAnimation" onclick="responsiveVoice.speak('HELP ME');" 
+                                         type="button" value="Play"
+                                            name="help" 
+                                            style="background-image:url('images/help.jpg')">
+                                        </div>
+                                    </div>
+                                         </div>
+                        </div>
+                    </div>
+                                  
+                  
+                
+                    <div class="people">
+                    <div id="h2">PUSH A FACE TO CALL OUT A NAME</div>
+                    <div class="child2">
+                        <div class="right">
+                          <div class="nine icon">
+                            <button class="butt js--triggerAnimation caregivers" onclick="responsiveVoice.speak('Ida');" 
+                            type="button" value="Play"
+                              id="ida" 
+                              name="Ida"
+                              style="background-image:url('images/ida.png') ">
+                            </button>
+                        </div>
+                          <div class="nine icon">
+                            <button class="butt js--triggerAnimation caregivers" onclick="responsiveVoice.speak('Toni');" 
+                            type="button" value="Play"
+                              id="toni" 
+                              name="Toni"
+                              style="background-image:url('images/toni.png')">
+                            </button>
+                        </div>
+                          <div class="nine icon">
+                            <button class="butt js--triggerAnimation caregivers" onclick="responsiveVoice.speak('Odette');" 
+                            type="button" value="Play"
+                              id= "odette"
+                              name="Odette" 
+                              style="background-image:url('images/odette.png')">
+                            </button>
+                        </div>
+                        </div>
+                        <div class="right">
+                          <div class="nine icon">
+                            <button class="butt js--triggerAnimation caregivers" onclick="responsiveVoice.speak('Robert');" 
+                            type="button" value="Play"
+                              id="robert"  
+                              name="Robert"
+                            
+                              style="background-image:url('images/robert.png')">
+                            </button>
+                        </div>
+                          <div class="nine icon">
+                            <button class="butt js--triggerAnimation caregivers" onclick="responsiveVoice.speak('Lelana');" 
+                                    type="button" value="Play"
+                               id="lelana" 
+                               name="Lelana"
+                               style="background-image:url('images/lelana.png')">
+                            </button>
+                        </div>
+                          <div class="nine icon">
+                            <button class="butt js--triggerAnimation caregivers" onclick="responsiveVoice.speak('Andrea');" 
+                            type="button" value="Play"
+                               id="andrea"
+                               name="Andrea"
+                               style="background-image:url('images/andrea.png')">
+                            </button>
+                        </div>
+
+                        </div>
+                        <div class="right">
+                                <div class="nine icon">
+                                    <button class="butt js--triggerAnimation caregivers" onclick="responsiveVoice.speak('Stephanie');" 
+                                    type="button" value="Play"
+                                    id ="steph" 
+                                    name="Stephanie"
+                                    style="background-image:url('images/steph.png')">
+                                </button>
+                            </div>
+                                <div class="nine icon">
+                                    <button class="butt js--triggerAnimation caregivers" onclick="responsiveVoice.speak('Bernadette');" 
+                                    type="button" value="Play"
+                                     id="bernadette" 
+                                     name="Bernadette"
+                                     style="background-image:url('images/bernadette.png')">
+                                    </button>
+                                </div>
+                        </div>
+                        
+                    </div>
+                </div>
+              
+              </div>
+                <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+                <script src="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.1/js/materialize.min.js"></script>
+            <script src="http://code.responsivevoice.org/responsivevoice.js"></script>
+                <script src="help.js" async defer></script>
+
+    </body>
+</html>

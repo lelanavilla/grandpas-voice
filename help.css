@@ -1,0 +1,192 @@
+html{
+    margin:0;
+    padding:0;
+   
+
+}
+body{
+    position:relative;
+    max-width:100%;
+    max-height:100vh;
+    background-color:black;
+}
+   
+.main {
+    width:100%;
+    float:left;
+    height:1%;
+    }
+    .child {
+        width:50%;
+        float:left;
+    }
+    .child2 {
+        width:100%;
+        float:left;
+    }
+    .people{
+        position:absolute;
+        right:5%;
+        width:45%;
+        top:10%;
+
+    }
+    #h3{
+        color:yellow;
+        position:relative;
+        left:20%;
+        font-size:1.15em;
+    }
+    #h2{
+        color:ORANGERED;
+        text-align:center;
+        font-size:1.15em;
+    }
+    .butt {
+        width: 96%;
+        float:left;
+        height: 150px;
+        background:black;
+        margin: 2% 0;
+        margin-bottom:10%; background-size:contain;
+        background-repeat:no-repeat;
+
+       
+     }
+     /* a.four{ z-index: 10; */
+        /* raises anchor tag above everything else in div */
+        /* background-color: white; */
+        /*workaround to make clickable in IE */
+        /* opacity: 0; */
+        /*workaround to make clickable in IE */
+        /* filter: alpha(opacity=0); */
+        /*workaround to make clickable in IE */
+    /* } */
+    div.speakTask{
+        width:60%;
+        height:160px;
+        background-repeat:no-repeat;
+        background-size:contain;
+        object-fit:center;
+        margin-bottom:2%;
+          
+    }
+    .nine {
+        width:94%;
+        float:left;
+        height: 200px;
+        margin: 2% 0;
+    }
+    .left {
+        width:40%;
+        float:left;
+        margin-left:14%;
+        margin-top:1%;
+        margin-right:-4%;
+        
+    }
+    .left2{
+        width:40%;
+        float:left;
+        margin-left:54%;
+        margin-top:-75%;
+        margin-right:-4%;
+    }
+    .right {
+        margin-top:2%;
+        width:33%;
+        float:left;
+    }
+    .caregivers{
+        width:100%;
+        height:200px;
+        background-size:cover;
+        background-repeat:no-repeat;
+    }
+    .butt{
+        height:100px;
+    }
+    
+
+    
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+.left{
+
+}
+div.left2{
+
+}
+.right{
+width:30%;
+
+}
+div.nine.icon{
+    height:100px;
+    margin-bottom:2%;
+    background-size:cover;
+}
+.caregivers{
+height:80px;
+width:80%;
+background-size:contain;
+
+
+
+}
+.butt{
+height:100px;
+}
+.people{
+
+}
+#h2{
+    font-size:1.15em;
+    margin-top:3%;
+}
+#h3{
+    font-size:1em;
+}
+.child2{
+    margin-top:5%;
+}
+
+} 
+
+@media only screen and (min-width: 581px) and (max-width: 768){
+ .child2{
+width:100%;
+
+ }.left{
+
+ }
+.left2{
+
+}
+.right{
+
+
+}
+.caregivers{
+   padding:-5%; 
+} 
+div.nine.icon{ 
+height:80px;
+width:80%;
+background-size:contain;
+background-repeat:no-repeat
+}
+.butt{
+  height:80px;
+
+}
+.people{
+    margin-top:0%;
+
+}
+#h2{
+font-size:18px;
+}
+#h3{
+    font-size:25%;
+}
+} 

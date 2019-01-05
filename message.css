@@ -1,0 +1,30 @@
+
+.container { 
+    font-size:20px;
+}
+.row { }
+.nav-wrapper { }
+.col { }
+.s12 { }
+.brand-logo {
+    background-color:orangered;
+    letter-spacing:.25em;
+    font-family:arial;
+    font-weight:bold;
+    text-align:center;
+    font-size:15%;
+    color:white;
+ }
+.s8 { }
+.offset-s2 { }
+.input-field { }
+.materialize-textarea { }
+.waves-effect { }
+.waves-light { }
+.btn { }
+.modal { }
+.action-bar { }
+.waves-green { }
+.btn-flat { }
+.modal-action { }
+.modal-close { }
